@@ -1,0 +1,32 @@
+{
+  "1": {
+    "title": "Round 1: Fundamentals",
+    "questions": [
+      {"prompt": "Which metric measures central tendency?", "options": ["Variance","Mean","Std Dev","IQR"], "answer_idx": 1},
+      {"prompt": "Which chart best shows distribution?", "options": ["Bar chart","Histogram","Line chart","Scatter"], "answer_idx": 1},
+      {"prompt": "Sample SD uses which ddof?", "options": ["0","1","n","n-2"], "answer_idx": 1},
+      {"prompt": "A/B tests typically compare:", "options": ["Populations","Means/Proportions","Medians only","Variances only"], "answer_idx": 1},
+      {"prompt": "Correlation ranges from:", "options": ["-1 to 1","0 to 1","-∞ to ∞","-2 to 2"], "answer_idx": 0}
+    ]
+  },
+  "2": {
+    "title": "Round 2: Modeling",
+    "questions": [
+      {"prompt": "Logistic regression predicts:", "options": ["Counts","Binary outcomes","Continuous","Time"], "answer_idx": 1},
+      {"prompt": "Regularization combats:", "options": ["Underfitting","Overfitting","Multicollinearity only","Heteroskedasticity only"], "answer_idx": 1},
+      {"prompt": "k in k-NN controls:", "options": ["Bias/variance","Learning rate","Tree depth","# Features"], "answer_idx": 0},
+      {"prompt": "ROC AUC evaluates:", "options": ["Ranking quality","Calibration","Runtime","Bias"], "answer_idx": 0},
+      {"prompt": "CV estimates:", "options": ["Train error","Generalization error","Bayes error","Noise"], "answer_idx": 1}
+    ]
+  },
+  "3": {
+    "title": "Round 3: Deployment & Ethics",
+    "questions": [
+      {"prompt": "Monitoring drift detects:", "options": ["Data shift","Latency","Throughput","Concurrency"], "answer_idx": 0},
+      {"prompt": "PII stands for:", "options": ["Private inferred info","Personal identifiable info","Personally identifiable information","Public identity info"], "answer_idx": 2},
+      {"prompt": "Guardrails protect:", "options": ["Revenue & UX","Only speed","Only memory","Only CPU"], "answer_idx": 0},
+      {"prompt": "Model cards are for:", "options": ["Tuning","Transparency docs","Encryption","Caching"], "answer_idx": 1},
+      {"prompt": "Rollback means:", "options": ["Increase traffic","Revert to safe version","Delete logs","Stop monitoring"], "answer_idx": 1}
+    ]
+  }
+}
