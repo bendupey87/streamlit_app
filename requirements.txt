@@ -3,4 +3,4 @@ supabase==2.5.1
 pandas==2.2.2
 pydantic>=2.5,<3
 httpx<0.28
-streamlit-autorefresh==0.0.2
+streamlit-autorefresh==1.0.1
