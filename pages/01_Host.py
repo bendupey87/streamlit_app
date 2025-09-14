@@ -3,6 +3,7 @@ import json, time
 import streamlit as st
 from lib.db import upsert_game, set_stage, get_game, list_teams, fetch_answers
 import pathlib
+from streamlit_autorefresh import st_autorefresh
 
 st.set_page_config(page_title="Host", page_icon="🧭", layout="wide")
 st.title("Host console")
@@ -14,7 +15,8 @@ with col_a:
         g = upsert_game(room_code)
         st.session_state["room_code"] = g.room_code
 with col_b:
-    poll = st.autorefresh(interval=1000, key="host_poll")
+
+    st_autorefresh(interval=1000, key="host_poll")
 
 if "room_code" not in st.session_state:
     st.info("Enter a room code and click Create/Load room.")

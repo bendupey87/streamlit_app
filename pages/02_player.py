@@ -2,10 +2,10 @@
 import json, pathlib
 import streamlit as st
 from lib.db import upsert_game, get_game, add_team, save_answer, set_minigame_score, fetch_answers
-
+from streamlit_autorefresh import st_autorefresh
 st.set_page_config(page_title="Player", page_icon="👥", layout="wide")
 
-poll = st.autorefresh(interval=1000, key="player_poll")
+st_autorefresh(interval=1000, key="player_poll")
 
 st.title("Player")
 room = st.text_input("Enter room code", value=st.session_state.get("room_code","ABC123"))
